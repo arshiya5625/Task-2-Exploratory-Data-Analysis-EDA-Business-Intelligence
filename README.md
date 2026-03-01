@@ -1,106 +1,129 @@
-# Task-2-Exploratory-Data-Analysis-EDA-Business-Intelligence
-EDA and SQL-based business analysis on customer sales data, including statistical analysis, visualizations, and dashboard mock-up.
-Exploratory Data Analysis (EDA) & Business Intelligence
-Project Overview
+# Exploratory Data Analysis (EDA) & Business Intelligence
 
-This project focuses on performing Exploratory Data Analysis (EDA) and Business Intelligence on a customer sales dataset. The objective was to analyze the data, uncover patterns and trends, answer business questions using SQL, and propose a dashboard structure based on key insights.
+## Project Overview
 
-This task builds upon the cleaned dataset prepared in Task-1.
+This project focuses on performing Exploratory Data Analysis (EDA) and Business Intelligence on a customer sales dataset. The goal was to uncover meaningful patterns, answer business questions using SQL, and propose a KPI-based dashboard structure.
 
-Project Objectives
+This task builds on the cleaned dataset prepared in Task-1 (Data Immersion & Wrangling).
 
-The main objectives of this project were:
+---
 
-Perform descriptive statistics and univariate analysis
+## Project Objectives
 
-Create visualizations to understand data distribution
+The objectives of this project were to:
 
-Use SQL to answer real business questions
+- Perform descriptive statistics and univariate analysis  
+- Visualize data distributions using charts  
+- Answer business-driven questions using SQL  
+- Explore relationships between multiple variables  
+- Design a static dashboard mock-up with key metrics  
 
-Perform multivariate analysis to explore relationships
+---
 
-Propose a static dashboard mock-up with key performance indicators (KPIs)
+## Dataset Description
 
-Dataset Description
+The dataset contains customer demographic and transaction information:
 
-The dataset contains customer demographic and transaction information, including:
+| Column Name       | Description                        |
+|------------------|------------------------------------|
+| Customer_ID      | Unique customer identifier         |
+| Customer_Age     | Age of the customer                |
+| Gender           | Customer gender                    |
+| City             | Customer location                  |
+| Purchase_Date    | Date of transaction                |
+| Purchase_Amount  | Amount spent per transaction       |
 
-Customer_ID
+---
 
-Customer_Age
+## 1. Descriptive Statistics & Univariate Analysis
 
-Gender
+Using Python (Pandas), I calculated:
 
-City
+- Mean, minimum, and maximum purchase amount  
+- Standard deviation of spending  
+- Frequency distribution of cities  
+- Gender distribution  
 
-Purchase_Date
+Visualizations created:
 
-Purchase_Amount
-
-The dataset used in this task was cleaned and prepared in the previous data wrangling task.
-
-1. Descriptive Statistics & Univariate Analysis
-
-Descriptive statistics were calculated using Python (Pandas) to understand:
-
-Mean, minimum, and maximum purchase amount
-
-Standard deviation of spending
-
-Frequency distribution of categorical variables
-
-Univariate visualizations created:
-
-Histogram for Purchase_Amount
-
-Bar chart for City distribution
-
-Gender distribution analysis
+- Histogram for Purchase Amount  
+- Bar chart for City distribution  
+- Bar chart for Gender distribution  
 
 These analyses helped in understanding spending patterns and customer distribution.
 
-2. SQL for Business Questions
+---
 
-The dataset was converted into a SQL table using SQLite, and several business-focused queries were executed.
+## 2. SQL for Business Questions
 
-Business questions answered:
+The dataset was converted into a SQL table using SQLite to simulate real-world business analysis.
 
-What are the top 5 cities by total revenue?
+### Business Questions Answered:
 
-What is the average purchase amount by gender?
+1. What are the top 5 cities by total revenue?  
+2. What is the average purchase amount by gender?  
+3. What is the monthly revenue trend?  
+4. Which city has the highest number of customers?  
+5. Which age groups contribute the highest revenue?  
 
-What is the monthly revenue trend?
+SQL concepts used:
 
-Which city has the highest number of customers?
+- SUM(), AVG(), COUNT()  
+- GROUP BY  
+- ORDER BY  
+- Date-based grouping  
+- Filtering and aggregation  
 
-Which age groups contribute the highest revenue?
+All SQL queries and outputs are included in this repository.
 
-The SQL queries involved:
+---
 
-Aggregation functions (SUM, AVG, COUNT)
+## 3. Multivariate Analysis & Correlation
 
-GROUP BY operations
+To explore relationships between variables, the following were created:
 
-Sorting and filtering
+- Scatter plot (Customer Age vs Purchase Amount)  
+- Correlation matrix  
+- Pairwise analysis of numerical features  
 
-Date-based grouping
+This helped identify relationships between age and spending behavior. 
 
-All SQL queries and their outputs are included in this repository.
+---
 
-3. Multivariate Analysis & Correlation
+## Tools & Technologies Used
 
-To explore relationships between variables, the following analyses were performed:
+- Python  
+- Pandas  
+- SQLite (SQL)  
+- Matplotlib / Seaborn  
+- Jupyter Notebook  
+- Excel / PowerPoint  
 
-Scatter plot: Customer Age vs Purchase Amount
+---
 
-Correlation matrix
+## Repository Structure
 
-Author
+- EDA_notebook.ipynb  
+- SQL_queries.sql  
+- dashboard_mockup.ppt  
+- README.md  
 
-Arshiya Ruksar
+---
 
-This project was completed as part of the ApexPlanet Internship under the Exploratory Data Analysis & Business Intelligence module.
+## Key Learnings
 
-Pairwise analysis of numerical variables
+Through this project, I gained practical experience in:
 
-This helped in understanding how demographic factors relate to spending behavior.
+- Data exploration and visualization  
+- SQL-based business analysis  
+- Correlation and relationship analysis  
+- KPI identification and dashboard planning  
+- Connecting data insights to business decisions  
+
+---
+
+## Author
+
+Arshiya Ruksar  
+
+Completed as part of the ApexPlanet Internship – EDA & Business Intelligence Module.
